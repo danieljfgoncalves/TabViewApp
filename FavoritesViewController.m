@@ -16,6 +16,7 @@
 @implementation FavoritesViewController
 
 -(id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.title = @"Favorites";
@@ -44,7 +45,7 @@
 // Declare showProfile Method here
 -(void)showProfile:(id)sender {
     ProfileViewController *profileViewController = [[ProfileViewController alloc]init];
-    [profileViewController.navigationController pushViewController:profileViewController animated:YES];
+    [self.navigationController pushViewController:profileViewController animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

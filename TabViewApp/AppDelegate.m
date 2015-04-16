@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "ProfileViewController.h"
+#import "FeedViewController.h"
+#import "FavoritesViewController.h"
 
 @interface AppDelegate ()
 
@@ -28,7 +31,25 @@
     self.window.rootViewController = colourTouchVC;
     [self.window makeKeyAndVisible];
     NSLog(@"Width: %f x Height:%f", viewRect.size.width, viewRect.size.height);
+    
+    FeedViewController *feedViewController = [[FeedViewController alloc]init];
+    UINavigationController *feedNavController = [[UINavigationController alloc]initWithRootViewController:feedViewController];
+    
+    FavoritesViewController *favoritesViewControlller = [[FavoritesViewController alloc]init];
+    UINavigationController *favoritesNavController = [[UINavigationController alloc]initWithRootViewController:favoritesViewControlller];
+    
+    ProfileViewController *profileViewController = [[ProfileViewController alloc] init];
+    UINavigationController *profileNavController = [[UINavigationController alloc]initWithRootViewController:profileViewController];
+    
+    UITabBarController *tabController = [[UITabBarController alloc] init];
+    tabController.viewControllers = @[feedNavController, favoritesNavController, profileNavController];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = tabController;
+    [self.window makeKeyAndVisible];
+    
     return YES;
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
