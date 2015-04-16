@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -26,6 +27,7 @@
     colourView.backgroundColor = [UIColor magentaColor];
     self.window.rootViewController = colourTouchVC;
     [self.window makeKeyAndVisible];
+    NSLog(@"Width: %f x Height:%f", viewRect.size.width, viewRect.size.height);
     return YES;
 }
 
