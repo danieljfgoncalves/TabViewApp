@@ -17,6 +17,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    // Create a new ViewController
+    CGRect viewRect = [[UIScreen mainScreen]bounds];
+    self.window = [[UIWindow alloc]initWithFrame:viewRect];
+    UIViewController *colourTouchVC = [[UIViewController alloc]init];
+    UIView *colourView = [[UIView alloc]init];
+    colourView.backgroundColor = [UIColor magentaColor];
+    self.window.rootViewController = colourTouchVC;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
