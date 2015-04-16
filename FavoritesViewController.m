@@ -21,6 +21,7 @@
     if (self) {
         self.title = @"Favorites";
         self.tabBarItem.image = [UIImage imageNamed:@"tab_icon_favorites"];
+//        self.view.backgroundColor = [UIColor greenColor];
     }
     return self;
 }
@@ -28,6 +29,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor greenColor];
     UIImageView *imageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"logo.jpg"]];
     
     imageView.contentMode = UIViewContentModeTop;
@@ -37,6 +39,7 @@
     
     UIButton *profileButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     profileButton.frame = CGRectMake(60, 300, 200, 44);
+    profileButton.backgroundColor = [UIColor magentaColor];
     [profileButton setTitle:@"View Profile" forState:UIControlStateNormal];
     [self.view addSubview:profileButton];
     [profileButton addTarget:self action:@selector(showProfile:) forControlEvents:UIControlEventTouchUpInside];

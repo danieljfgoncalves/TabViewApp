@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
 #import "ProfileViewController.h"
 #import "FeedViewController.h"
 #import "FavoritesViewController.h"
@@ -22,20 +21,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    // Create a new ViewController
-    CGRect viewRect = [[UIScreen mainScreen]bounds];
-    self.window = [[UIWindow alloc]initWithFrame:viewRect];
-    UIViewController *colourTouchVC = [[UIViewController alloc]init];
-    UIView *colourView = [[UIView alloc]init];
-    colourView.backgroundColor = [UIColor magentaColor];
-    self.window.rootViewController = colourTouchVC;
-    [self.window makeKeyAndVisible];
-    NSLog(@"Width: %f x Height:%f", viewRect.size.width, viewRect.size.height);
-    
     FeedViewController *feedViewController = [[FeedViewController alloc]init];
     UINavigationController *feedNavController = [[UINavigationController alloc]initWithRootViewController:feedViewController];
     
-    FavoritesViewController *favoritesViewControlller = [[FavoritesViewController alloc]init];
+    FavoritesViewController *favoritesViewControlller = [[FavoritesViewController alloc] init];
     UINavigationController *favoritesNavController = [[UINavigationController alloc]initWithRootViewController:favoritesViewControlller];
     
     ProfileViewController *profileViewController = [[ProfileViewController alloc] init];
@@ -44,7 +33,9 @@
     UITabBarController *tabController = [[UITabBarController alloc] init];
     tabController.viewControllers = @[feedNavController, favoritesNavController, profileNavController];
     
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    // Setting UIWindow.
+    CGRect viewRect = [[UIScreen mainScreen] bounds];
+    self.window = [[UIWindow alloc]initWithFrame:viewRect];
     self.window.rootViewController = tabController;
     [self.window makeKeyAndVisible];
     

@@ -9,14 +9,12 @@
 /* Begin PBXBuildFile section */
 		E41D5AF21ADF59A1004CBF7B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E41D5AF11ADF59A1004CBF7B /* main.m */; };
 		E41D5AF51ADF59A1004CBF7B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E41D5AF41ADF59A1004CBF7B /* AppDelegate.m */; };
-		E41D5AF81ADF59A1004CBF7B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E41D5AF71ADF59A1004CBF7B /* ViewController.m */; };
-		E41D5AFB1ADF59A1004CBF7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E41D5AF91ADF59A1004CBF7B /* Main.storyboard */; };
 		E41D5AFD1ADF59A1004CBF7B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E41D5AFC1ADF59A1004CBF7B /* Images.xcassets */; };
-		E41D5B001ADF59A1004CBF7B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E41D5AFE1ADF59A1004CBF7B /* LaunchScreen.xib */; };
 		E41D5B0C1ADF59A2004CBF7B /* TabViewAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E41D5B0B1ADF59A2004CBF7B /* TabViewAppTests.m */; };
 		E41D5B1A1ADF59D6004CBF7B /* FavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E41D5B191ADF59D6004CBF7B /* FavoritesViewController.m */; };
 		E41D5B1D1ADF59E7004CBF7B /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E41D5B1C1ADF59E7004CBF7B /* ProfileViewController.m */; };
 		E41D5B201ADF59F3004CBF7B /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E41D5B1F1ADF59F3004CBF7B /* FeedViewController.m */; };
+		E41D5B221AE03920004CBF7B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E41D5B211AE03920004CBF7B /* LaunchScreen.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +33,7 @@
 		E41D5AF11ADF59A1004CBF7B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E41D5AF31ADF59A1004CBF7B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E41D5AF41ADF59A1004CBF7B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E41D5AF61ADF59A1004CBF7B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = TabViewApp/ViewController.h; sourceTree = "<group>"; };
-		E41D5AF71ADF59A1004CBF7B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = TabViewApp/ViewController.m; sourceTree = "<group>"; };
-		E41D5AFA1ADF59A1004CBF7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E41D5AFC1ADF59A1004CBF7B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		E41D5AFF1ADF59A1004CBF7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		E41D5B051ADF59A2004CBF7B /* TabViewAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabViewAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E41D5B0A1ADF59A2004CBF7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E41D5B0B1ADF59A2004CBF7B /* TabViewAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabViewAppTests.m; sourceTree = "<group>"; };
@@ -49,6 +43,7 @@
 		E41D5B1C1ADF59E7004CBF7B /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		E41D5B1E1ADF59F3004CBF7B /* FeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedViewController.h; sourceTree = "<group>"; };
 		E41D5B1F1ADF59F3004CBF7B /* FeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedViewController.m; sourceTree = "<group>"; };
+		E41D5B211AE03920004CBF7B /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,9 +90,7 @@
 			children = (
 				E41D5AF31ADF59A1004CBF7B /* AppDelegate.h */,
 				E41D5AF41ADF59A1004CBF7B /* AppDelegate.m */,
-				E41D5AF91ADF59A1004CBF7B /* Main.storyboard */,
 				E41D5AFC1ADF59A1004CBF7B /* Images.xcassets */,
-				E41D5AFE1ADF59A1004CBF7B /* LaunchScreen.xib */,
 				E41D5AEF1ADF59A1004CBF7B /* Supporting Files */,
 			);
 			path = TabViewApp;
@@ -139,14 +132,13 @@
 		E41D5B161ADF59AF004CBF7B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				E41D5AF61ADF59A1004CBF7B /* ViewController.h */,
-				E41D5AF71ADF59A1004CBF7B /* ViewController.m */,
 				E41D5B181ADF59D6004CBF7B /* FavoritesViewController.h */,
 				E41D5B191ADF59D6004CBF7B /* FavoritesViewController.m */,
 				E41D5B1B1ADF59E7004CBF7B /* ProfileViewController.h */,
 				E41D5B1C1ADF59E7004CBF7B /* ProfileViewController.m */,
 				E41D5B1E1ADF59F3004CBF7B /* FeedViewController.h */,
 				E41D5B1F1ADF59F3004CBF7B /* FeedViewController.m */,
+				E41D5B211AE03920004CBF7B /* LaunchScreen.xib */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -238,8 +230,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E41D5AFB1ADF59A1004CBF7B /* Main.storyboard in Resources */,
-				E41D5B001ADF59A1004CBF7B /* LaunchScreen.xib in Resources */,
+				E41D5B221AE03920004CBF7B /* LaunchScreen.xib in Resources */,
 				E41D5AFD1ADF59A1004CBF7B /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,7 +249,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E41D5AF81ADF59A1004CBF7B /* ViewController.m in Sources */,
 				E41D5AF51ADF59A1004CBF7B /* AppDelegate.m in Sources */,
 				E41D5B1A1ADF59D6004CBF7B /* FavoritesViewController.m in Sources */,
 				E41D5AF21ADF59A1004CBF7B /* main.m in Sources */,
@@ -284,25 +274,6 @@
 			targetProxy = E41D5B061ADF59A2004CBF7B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		E41D5AF91ADF59A1004CBF7B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E41D5AFA1ADF59A1004CBF7B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E41D5AFE1ADF59A1004CBF7B /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E41D5AFF1ADF59A1004CBF7B /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E41D5B0D1ADF59A2004CBF7B /* Debug */ = {
@@ -458,6 +429,7 @@
 				E41D5B111ADF59A2004CBF7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E41D5B121ADF59A2004CBF7B /* Build configuration list for PBXNativeTarget "TabViewAppTests" */ = {
 			isa = XCConfigurationList;
@@ -466,6 +438,7 @@
 				E41D5B141ADF59A2004CBF7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
