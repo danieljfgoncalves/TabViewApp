@@ -21,7 +21,6 @@
     if (self) {
         self.title = @"Favorites";
         self.tabBarItem.image = [UIImage imageNamed:@"tab_icon_favorites"];
-//        self.view.backgroundColor = [UIColor greenColor];
     }
     return self;
 }
@@ -29,11 +28,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+//    Resolve the logo going underneath the navBar
+//    self.edgesForExtendedLayout = UIRectEdgeNone;
+    
     self.view.backgroundColor = [UIColor greenColor];
-    UIImageView *imageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"logo.jpg"]];
+    UIImageView *imageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"logo"]];
     
     imageView.contentMode = UIViewContentModeTop;
-    imageView.frame = self.view.frame;
+    imageView.frame = CGRectMake(15, 75, 60, 73);
     
     [self.view addSubview:imageView];
     

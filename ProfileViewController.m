@@ -28,12 +28,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.navigationController.navigationBar.translucent = NO;
+//    self.navigationController.navigationBar.translucent = NO;
+    
     self.view.backgroundColor = [UIColor cyanColor];
     
     // Added a profile Button (subView) to the view.
     UIButton *profileButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    profileButton.frame = CGRectMake(15, 15, 200, 112.5);
+    profileButton.frame = CGRectMake(15, 75, 200, 112.5);
     [profileButton setTintColor:[UIColor yellowColor]];
     UIImage *displayImage = [UIImage imageNamed:@"profile_image"];
     profileButton.layer.cornerRadius = 10.0f;
