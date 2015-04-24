@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ProfileViewController.h"
-#import "FeedViewController.h"
+#import "FeedTableViewController.h"
 #import "FavoritesViewController.h"
 
 @interface AppDelegate ()
@@ -21,8 +21,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    FeedViewController *feedViewController = [[FeedViewController alloc]init];
-    UINavigationController *feedNavController = [[UINavigationController alloc]initWithRootViewController:feedViewController];
+    FeedTableViewController *feedTableViewController = [[FeedTableViewController alloc]init];
+    UINavigationController *feedNavController = [[UINavigationController alloc]initWithRootViewController:feedTableViewController];
     
     FavoritesViewController *favoritesViewControlller = [[FavoritesViewController alloc] init];
     UINavigationController *favoritesNavController = [[UINavigationController alloc]initWithRootViewController:favoritesViewControlller];

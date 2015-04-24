@@ -47,6 +47,7 @@
     [profileButton addTarget:self action:@selector(showZoomedProfile:) forControlEvents:UIControlEventTouchUpInside];
     
     
+    
 }
 
 -(void)showZoomedProfile:(id)Sender {

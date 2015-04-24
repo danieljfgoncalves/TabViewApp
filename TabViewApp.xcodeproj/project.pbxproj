@@ -13,8 +13,8 @@
 		E41D5B0C1ADF59A2004CBF7B /* TabViewAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E41D5B0B1ADF59A2004CBF7B /* TabViewAppTests.m */; };
 		E41D5B1A1ADF59D6004CBF7B /* FavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E41D5B191ADF59D6004CBF7B /* FavoritesViewController.m */; };
 		E41D5B1D1ADF59E7004CBF7B /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E41D5B1C1ADF59E7004CBF7B /* ProfileViewController.m */; };
-		E41D5B201ADF59F3004CBF7B /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E41D5B1F1ADF59F3004CBF7B /* FeedViewController.m */; };
 		E41D5B221AE03920004CBF7B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E41D5B211AE03920004CBF7B /* LaunchScreen.xib */; };
+		E4AF646B1AEA8C5C00377B5B /* FeedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4AF646A1AEA8C5C00377B5B /* FeedTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,9 +41,9 @@
 		E41D5B191ADF59D6004CBF7B /* FavoritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesViewController.m; sourceTree = "<group>"; };
 		E41D5B1B1ADF59E7004CBF7B /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		E41D5B1C1ADF59E7004CBF7B /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
-		E41D5B1E1ADF59F3004CBF7B /* FeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedViewController.h; sourceTree = "<group>"; };
-		E41D5B1F1ADF59F3004CBF7B /* FeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedViewController.m; sourceTree = "<group>"; };
 		E41D5B211AE03920004CBF7B /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		E4AF64691AEA8C5C00377B5B /* FeedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedTableViewController.h; sourceTree = "<group>"; };
+		E4AF646A1AEA8C5C00377B5B /* FeedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,8 +136,8 @@
 				E41D5B191ADF59D6004CBF7B /* FavoritesViewController.m */,
 				E41D5B1B1ADF59E7004CBF7B /* ProfileViewController.h */,
 				E41D5B1C1ADF59E7004CBF7B /* ProfileViewController.m */,
-				E41D5B1E1ADF59F3004CBF7B /* FeedViewController.h */,
-				E41D5B1F1ADF59F3004CBF7B /* FeedViewController.m */,
+				E4AF64691AEA8C5C00377B5B /* FeedTableViewController.h */,
+				E4AF646A1AEA8C5C00377B5B /* FeedTableViewController.m */,
 				E41D5B211AE03920004CBF7B /* LaunchScreen.xib */,
 			);
 			name = Controller;
@@ -252,8 +252,8 @@
 				E41D5AF51ADF59A1004CBF7B /* AppDelegate.m in Sources */,
 				E41D5B1A1ADF59D6004CBF7B /* FavoritesViewController.m in Sources */,
 				E41D5AF21ADF59A1004CBF7B /* main.m in Sources */,
-				E41D5B201ADF59F3004CBF7B /* FeedViewController.m in Sources */,
 				E41D5B1D1ADF59E7004CBF7B /* ProfileViewController.m in Sources */,
+				E4AF646B1AEA8C5C00377B5B /* FeedTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
