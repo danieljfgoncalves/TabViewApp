@@ -7,6 +7,7 @@
 //
 
 #import "FeedTableViewController.h"
+#import "FeedTableViewCell.h"
 
 @interface FeedTableViewController ()
 
@@ -56,18 +57,21 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+    FeedTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
     
     // Configure the cell...
     if (cell == nil) {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
+        cell = [[FeedTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
     }
     
-    cell.textLabel.text = @"My Cell.";
+    cell.labelName.text = @"My Cell.";
     
     return cell;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return self.tableView.frame.size.height/3;
+}
 
 /*
 // Override to support conditional editing of the table view.
